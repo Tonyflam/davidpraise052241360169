@@ -1,0 +1,143 @@
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: -4px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    z-index: 1000; /* Ensure the nav is above other content */
+}
+#h1, #para1 {
+    font-family:'Lato', sans-serif;;
+    font-weight: bold;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 9px; /* Adjust the margin as needed */
+    margin-right: 19px;
+    font-weight: bold;
+   
+    
+}
+nav a:hover {
+    color: #c9a62d;
+}
+nav h1{
+    display: inline-block;
+    text-decoration: none ;;
+    margin-right:650px
+}
+nav img{
+    display: inline-block;
+    width: 6% ;
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.heading {
+    text-align: center;
+    font-family: 'Cooper Black', sans-serif;
+    font-size: 40px;
+    color: #333333; /* Dark blue color */
+    margin-bottom: 30px;
+    margin-top: 200px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 90px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    margin-top: 100px;
+}
+.box {
+    width: 30%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #eaf2f8;
+}
+.read-more-btn {
+    background: linear-gradient(to right, #001845, #117864);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    width: 300px;
+}
+.read-more-btn:hover {
+    background: linear-gradient(to right, #00132c, #075c40);
+}
+.box h2:hover{
+    color: #c9a62d;
+
+}
+footer {
+    display: flex;
+    margin-top: 200px;
+    
+}
+
+.footer-section {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section p {
+    color: white;
+}
+.footer-section h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.footer-section p{
+    margin-top: 32px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 88px;
+}
+.footer-section p a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+   
+}
+.footer-section p a:hover{
+  color: #c9a62d;  
+}
+.copyright {
+    flex-basis: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: -12px;
+    margin-bottom: 40px;
+}

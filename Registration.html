@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kstu Registration</title>
+   <link rel="stylesheet" href="styles7.css">
+</head>
+<body>
+    <nav>
+        <img src="kstu.png" alt="logo">
+        <h1 id="h1">Kumasi Technical University</h1>
+        <a href="index.html">Home</a>
+        <a href="Faculty.html">Faculty</a>
+        <a href="department.html">Departments</a>
+        <a href="payments.html">Payments</a>
+
+     </nav> 
+     <!-- <div class="container"> -->
+    <h2 class="Kstu">Kumasi Technical University Student Registration Form</h2>
+    <form action="submit_registration.php" method="post" enctype="multipart/form-data">
+        <label for="student_number">Student Number:</label>
+        <input type="text" id="student_number" name="student_number" required>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="">Select Faculty</option>
+            <option value="Faculty of Engineering and Technology">Faculty of Engineering and Technology</option>
+            <option value="Faculty of Applied Sciences and Technology">Faculty of Applied Sciences and Technology</option>
+            <option value="Faculty of Creative Arts and Technology">Faculty of Creative Arts and Technology</option>
+            <option value="Business School">Business School</option>
+            <option value="Faculty of Entrepreneurship and Enterprise Development">Faculty of Entrepreneurship and Enterprise Development</option>
+            <option value="Faculty of Health Sciences">Health Sciences</option>
+            <option value="Faculty of Faculty of Built and Natural Environment">Faculty of Built and Natural Environment</option>
+            <option value="Faculty of Graduate School">Graduate Schooll</option>
+        </select>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="telephone_number">Telephone Number:</label>
+        <input type="tel" id="telephone_number" name="telephone_number" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="picture">Upload Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required>
+
+        <button type="submit">Register</button>
+    </form>
+<!-- </div> -->
+<footer>
+    <div class="footer-section">
+        <h2>Quick Links</h2>
+        <p><a href="Faculty.html">Faculty </a></p>
+          <p><a href="department.html">Departments</a></p>
+          <p><a href="Timetables.html">Timetables </a></p>
+          <p><a href="payments.html">Payments</a></p>
+          <p><a href="Registration.html"></a>Register</p>
+        
+    </div>
+    <div class="footer-section">
+      <h2>Offices & Directorates</h2>
+        <p>Directorate of Finance</p>
+        <p>Directorate of Information and Communication Technology</p>
+        <p>Directorate of Planning and Quality Assurance</p>
+        <p>Directorate of Procurement</p>
+        <p>Directorate of Works & Physical Development</p>
+        <p>Institute of Distance Learning and Continuing Education</p>
+        <p>Institute of Research, Innovation and Development</p>
+        <p>International Affairs & Institutional Linkages</p>
+        
+    </div>
+    <div class="footer-section">
+      <h2>Faculties</h2>
+      <p>Business School</p>
+        <p>Faculty of Applied Sciences and Technology</p>
+        <p>Faculty of Built and Natural Environment</p>
+        <p>Faculty of Creative Arts and Technology</p>
+        <p>Faculty of Engineering and Technology</p>
+        <p>Faculty of Entrepreneurship and Enterprise Development</p>
+        <p>Faculty of Health Sciences
+          Graduate School</p>
+    </div>
+    <div class="footer-section">
+      <h2>Contact KsTU</h2>
+        <p>Location: Kumasi - Ashanti</p>
+        <p>Region, Ghana, W/A</p>
+        <br>
+        <p>Postal Address: P. O. Box 854, Kumasi </p>
+        <br>
+        <p>Email: info@kstu.edu.gh</p>
+        <p>Tel: Admissions: +233(0)322 496 534, +233(0)322 496 380</p>
+    </div>
+    
+</footer>
+<p class="copyright">&copy; 2024 Francis-Omogbai David Praise. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var slides = document.querySelectorAll('.slide');
+            var currentIndex = 0;
+          
+            // Show the first slide
+            slides[currentIndex].style.display = 'block';
+          
+            // Function to switch to the next slide
+            function nextSlide() {
+              slides[currentIndex].style.display = 'none';
+              currentIndex = (currentIndex + 1) % slides.length;
+              slides[currentIndex].style.display = 'block';
+            }
+          
+            // Automatically switch slides every 5 seconds (5000 milliseconds)
+            setInterval(nextSlide, 3000);
+          });
+          document.addEventListener('DOMContentLoaded', function() {
+            var animatedElements = document.querySelectorAll('.animated');
+
+            function checkPosition() {
+                for (var i = 0; i < animatedElements.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = animatedElements[i].getBoundingClientRect().top;
+                    if (elementTop < windowHeight - 100) {
+                        animatedElements[i].classList.add('visible');
+                    }
+                }
+            }
+
+            // Initial check
+            checkPosition();
+
+            // Check again on scroll
+            window.addEventListener('scroll', function() {
+                checkPosition();
+            });
+        });
+
+        </script>
+    </head>
+    <body>
+        <nav>
+            <img src="kstu.png" alt="logo">
+            <h1 id="h1">Kumasi Technical University</h1>
+            <a href="Registration.html">Register </a>
+            <a href="Faculty.html">Faculty </a>
+            <a href="department.html">Departments </a>
+            <a href="Timetables.html">Time tables</a>
+            <a href="payments.html">Payments</a>
+
+         </nav> 
+
+<div class="first_sec animated">
+  <div class="slideshow-container">
+    <img src="fees pic.jpg" class="slide" alt="Slide 1" height="600"> 
+    <img src="KsTU Admission pic.jpg" class="slide" alt="Slide 2" height="600">
+    <img src="Kstu pic 1.jpg" class="slide" alt="Slide 3" height="600">
+  </div>
+<br>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<br>
+          <div class="about-section animated">
+            <div class="text">
+              <br>
+                <br>
+                <br>
+                <br>
+              <h2>About Kumasi Technical University</h2>
+              <p>Welcome to Kumasi Technical University, a leading institution in providing quality education in Kumasi. With a focus on practical skills and academic excellence, we are committed to preparing our students for successful careers in their chosen fields.</p>
+              <p>Our state-of-the-art facilities, experienced faculty, and industry-relevant curriculum ensure that our students receive the best possible education, setting them up for a bright future. Join us at Kumasi Technical University and embark on a journey of knowledge, growth, and success.</p>
+            </div>
+            <div class="image">
+              <img src="gahan pic.jpg" alt="University Image" >
+            </div>
+          </div>
+        </div>
+
+        <div class="links animated">
+          <div class="box">
+           <p>Kumasi Technical University has a different faculties that you might be interested in,  Click here to check out our faculties....</p>
+           <br>
+           <br>
+           <h3><a href="Faculty.html">Faculty </a></h3>
+          </div>
+          <div class="box">
+            <p>Kumasi Technical University has a Many Departments that you might be interested in,  Click here to check out our Departments....</p>
+            <br>
+           <br>
+            <h3> <a href="department.html">Departments </a></h3>
+          </div>
+          <div class="box">
+            <p>Click here to check out the timetables....</p>
+            <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <h3><a href="Timetables.html">Time tables</a></h3>
+          </div>
+          <div class="box">  
+            <p> Click here to check out your fees Payments....</p>
+            <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <h3><a href="payments.html">Payments</a></h3>
+          </div>
+     </div> 
+     <footer>
+      <div class="footer-section">
+          <h2>Quick Links</h2>
+          <p><a href="Faculty.html">Faculty </a></p>
+          <p><a href="department.html">Departments</a></p>
+          <p><a href="Timetables.html">Timetables </a></p>
+          <p><a href="payments.html">Payments</a></p>
+          <p><a href="Registration.html"></a>Register</p>
+      </div>
+      <div class="footer-section">
+        <h2>Offices & Directorates</h2>
+          <p>Directorate of Finance</p>
+          <p>Directorate of Information and Communication Technology</p>
+          <p>Directorate of Planning and Quality Assurance</p>
+          <p>Directorate of Procurement</p>
+          <p>Directorate of Works & Physical Development</p>
+          <p>Institute of Distance Learning and Continuing Education</p>
+          <p>Institute of Research, Innovation and Development</p>
+          <p>International Affairs & Institutional Linkages</p>
+          
+      </div>
+      <div class="footer-section">
+        <h2>Faculties</h2>
+        <p>Business School</p>
+          <p>Faculty of Applied Sciences and Technology</p>
+          <p>Faculty of Built and Natural Environment</p>
+          <p>Faculty of Creative Arts and Technology</p>
+          <p>Faculty of Engineering and Technology</p>
+          <p>Faculty of Entrepreneurship and Enterprise Development</p>
+          <p>Faculty of Health Sciences
+            Graduate School</p>
+      </div>
+      <div class="footer-section">
+        <h2>Contact KsTU</h2>
+          <p>Location: Kumasi - Ashanti</p>
+          <p>Region, Ghana, W/A</p>
+          <br>
+          <p>Postal Address: P. O. Box 854, Kumasi </p>
+          <br>
+          <p>Email: info@kstu.edu.gh</p>
+          <p>Tel: Admissions: +233(0)322 496 534, +233(0)322 496 380</p>
+      </div>
+      
+  </footer>
+  <p class="copyright">&copy; 2024 Francis-Omogbai David Praise. All rights reserved.</p>
+  
+     
+
+    </body>
+</html>
